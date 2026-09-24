@@ -3,10 +3,14 @@
    ========================= */
 
 .navbar {
-    background-color: #222;
-    font-size: 18px;
-    padding: 15px;
+    background-color: #333;
+    font-size: 1.2em;
+    padding: 1em;
     text-align: center;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    list-style: none;
 }
 
 .navbar ul {
@@ -16,12 +20,12 @@
 }
 
 .navbar li {
-    display: inline-block;
-    margin: 0 15px;
+    display: inline;
+    margin: 0 1em;
 }
 
 .navbar a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     padding: 10px 15px;
 }
@@ -35,20 +39,24 @@
    MAIN CONTENT
    ========================= */
 
-main {
+.main-content {
     padding: 40px 20px;
     text-align: center;
+    padding-top: 5em;
 }
 
+sections {
+    padding: 2em 1em;
+}
 #home {
     padding: 60px 20px;
     text-align: center;
 }
 
 #home h1 {
-    font-size: 42px;
+    font-size: 2.5em;
     color: #222;
-    margin-bottom: 10px;
+    margin-bottom: 0.5em;
 }
 
 #home h2 {
@@ -58,8 +66,8 @@ main {
 }
 
 #home p {
-    font-size: 18px;
-    color: #555;
+    font-size: 1.2em;
+    color: #666;
     max-width: 700px;
     margin: 0 auto 20px;
 }
@@ -72,6 +80,7 @@ main {
 #portfolio {
     padding: 50px 20px;
     text-align: center;
+    justify-content: space-around;
 }
 
 #portfolio h2 {
@@ -89,31 +98,36 @@ main {
     align-items: stretch;
     flex-wrap: wrap;
     gap: 25px;
+    padding: 1em;
 }
 
 
 /* Individual portfolio items */
 
 .portfolio-item {
-    background-color: white;
-    width: 300px;
-    padding: 20px;
-    margin: 10px;
+    background-color: #fff;
+    width: 30%;
+    padding: 1em;
+    margin: 1em;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    transition: transform 0.3s;
 }
 
 .portfolio-item h3 {
     font-size: 22px;
     color: #222;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .portfolio-item p {
     font-size: 16px;
     color: #555;
-    margin-bottom: 15px;
+    margin-bottom: 0.5em;
 }
 
 .portfolio-item img {
