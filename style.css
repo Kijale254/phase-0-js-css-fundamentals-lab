@@ -1,0 +1,152 @@
+/* =========================
+   NAVIGATION BAR
+   ========================= */
+
+.navbar {
+    background-color: #222;
+    font-size: 18px;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.navbar a:hover {
+    color: #00bcd4;
+}
+
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#home {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 42px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+#home h2 {
+    font-size: 28px;
+    color: #00bcd4;
+    margin-bottom: 15px;
+}
+
+#home p {
+    font-size: 18px;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+
+/* =========================
+   PORTFOLIO SECTION
+   ========================= */
+
+#portfolio {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+
+/* Portfolio container */
+
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+
+/* Individual portfolio items */
+
+.portfolio-item {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item h3 {
+    font-size: 22px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.portfolio-item p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* =========================
+   HOVER EFFECT
+   ========================= */
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+#footer {
+    background-color: #222;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    position: relative;
+    margin-top: 40px;
+}
+
+#footer p {
+    margin: 0;
+    font-size: 16px;
+}
